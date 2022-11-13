@@ -1,12 +1,13 @@
 <template>
-<div id="app">
-
-</div>
+  <div id="app">
+    <keep-alive exclude="Search,SearchResult,Detail,UserEdit,Login">
+      <router-view></router-view>
+    </keep-alive>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
 }
 </script>
 
